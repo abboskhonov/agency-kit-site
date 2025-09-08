@@ -54,7 +54,7 @@ function Carousel({
       ...opts,
       axis: orientation === "horizontal" ? "x" : "y",
     },
-    plugins,
+    plugins
   );
   const [canScrollPrev, setCanScrollPrev] = React.useState(false);
   const [canScrollNext, setCanScrollNext] = React.useState(false);
@@ -83,7 +83,7 @@ function Carousel({
         scrollNext();
       }
     },
-    [scrollPrev, scrollNext],
+    [scrollPrev, scrollNext]
   );
 
   React.useEffect(() => {
@@ -153,7 +153,7 @@ function CarouselItem({ className, ...props }: React.ComponentProps<"div">) {
       className={cn(
         "min-w-0 shrink-0 grow-0 basis-full",
         orientation === "horizontal" ? "pl-4" : "pt-4",
-        className,
+        className
       )}
       {...props}
     />
@@ -178,13 +178,13 @@ function CarouselPrevious({
         orientation === "horizontal"
           ? "top-1/2 -left-12 -translate-y-1/2"
           : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
-        className,
+        className
       )}
       disabled={!canScrollPrev}
       onClick={scrollPrev}
       {...props}
     >
-      <ArrowLeft className="text-white" />
+      <ArrowLeft />
       <span className="sr-only">Previous slide</span>
     </Button>
   );
@@ -208,23 +208,23 @@ function CarouselNext({
         orientation === "horizontal"
           ? "top-1/2 -right-12 -translate-y-1/2"
           : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
-        className,
+        className
       )}
       disabled={!canScrollNext}
       onClick={scrollNext}
       {...props}
     >
-      <ArrowRight className="text-white" />
+      <ArrowRight />
       <span className="sr-only">Next slide</span>
     </Button>
   );
 }
 
 export {
+  type CarouselApi,
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
   CarouselPrevious,
-  type CarouselApi,
+  CarouselNext,
 };
