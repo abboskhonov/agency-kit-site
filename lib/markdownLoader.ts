@@ -150,7 +150,7 @@ export const markdownToHTML = (markdown: string) => {
     .replace(/^# (.*$)/gim, '<h1 class="text-3xl font-bold mb-8 text-foreground">$1</h1>')
     // Lists
     .replace(/^\* (.*$)/gim, '<li class="mb-2 text-muted-foreground">$1</li>')
-    .replace(/(<li.*<\/li>)/gs, '<ul class="list-disc list-inside mb-4 space-y-1">$1</ul>')
+    .replace(/(<li.*<\/li>)/g, '<ul class="list-disc list-inside mb-4 space-y-1">$1</ul>')
     // Numbered lists
     .replace(/^\d+\. (.*$)/gim, '<li class="mb-2 text-muted-foreground">$1</li>')
     // Paragraphs
