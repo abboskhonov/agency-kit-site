@@ -30,25 +30,10 @@ function Navbar() {
       description: "Learn more about our company",
     },
     {
-      name: "Services",
-      href: "/services",
-      description: "Explore our comprehensive service offerings",
-    },
-    {
       name: "Blog",
       href: "/blog",
       description: "Read our latest AI insights and research",
-    },
-    {
-      name: "Case Studies",
-      href: "/#case-studies",
-      description: "View our successful project implementations",
-    },
-    {
-      name: "Contact",
-      href: "/#contact",
-      description: "Get in touch with our team",
-    },
+    }
   ];
 
   const toggleMenu = () => {

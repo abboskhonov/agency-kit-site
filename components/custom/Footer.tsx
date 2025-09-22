@@ -10,17 +10,14 @@ function Footer() {
   const imageRef = useRef<HTMLImageElement>(null);
 
   const resourceLinks = [
-    { name: "Research", href: "#" },
-    { name: "Blogs", href: "#" },
-    { name: "Case Studies", href: "#" },
-    { name: "About", href: "#" },
+    { name: "Blogs", href: "blog" },
+    { name: "About", href: "about" },
   ];
 
   const socialLinks = [
-    { name: "X", href: "#" },
-    { name: "Instagram", href: "#" },
-    { name: "LinkedIn", href: "#" },
-    { name: "Threads", href: "#" },
+    { name: "X", href: "https://x.com/Pinak72813632" },
+    { name: "LinkedIn", href: "https://www.linkedin.com/in/pinakfaldu/" },
+    { name: "Github", href: "https://github.com/pinak3748" },
   ];
 
   return (
@@ -97,7 +94,7 @@ function Footer() {
                   <a href="#work-with-us">
                     <Button
                       variant="outline"
-                      className="border-primary-foreground/70 bg-transparent text-white hover:bg-white/10"
+                      className="border-primary-foreground/5 bg-white/5 cursor-pointer backdrop-blur-2xl text-white hover:bg-white/10 hover:text-white hover:backdrop-blur-2xl"
                     >
                       Work with us
                       <ArrowUpRight className="ml-2 h-4 w-4" />
