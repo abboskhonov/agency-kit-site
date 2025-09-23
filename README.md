@@ -221,7 +221,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- 📧 **Email**: [your-email@example.com](mailto:your-email@example.com)
+- 📧 **Email**: [pinakfaldu3748@gmail.com](mailto:pinakfaldu3748@gmail.com)
 - 🐛 **Issues**: [GitHub Issues](https://github.com/pinak3748/modern-agency-template/issues)
 - 💬 **Discussions**: [GitHub Discussions](https://github.com/pinak3748/modern-agency-template/discussions)
 
