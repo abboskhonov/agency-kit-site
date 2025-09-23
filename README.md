@@ -159,14 +159,12 @@ This template uses GSAP for smooth, performant animations:
 ### Adding Custom Animations
 
 ```typescript
-// Use the built-in animation effects
 gsap.effects.fadeUpOnScroll(element, {
   start: "top 90%",
   duration: 0.8,
   yOffset: 30
 });
 
-// Or create custom animations
 gsap.fromTo(element, {
   opacity: 0,
   y: 50
