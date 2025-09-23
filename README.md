@@ -156,37 +156,6 @@ This template uses GSAP for smooth, performant animations:
 - **Smooth transitions** between pages
 - **Custom animation effects** in `lib/GSAPAnimations.ts`
 
-### Adding Custom Animations
-
-```typescript
-gsap.effects.fadeUpOnScroll(element, {
-  start: "top 90%",
-  duration: 0.8,
-  yOffset: 30
-});
-
-gsap.fromTo(element, {
-  opacity: 0,
-  y: 50
-}, {
-  opacity: 1,
-  y: 0,
-  duration: 1,
-  ease: "power2.out"
-});
-```
-
-## 🚀 Deployment
-
-### Vercel (Recommended)
-1. Push your code to GitHub
-2. Connect your repository to Vercel
-3. Deploy with zero configuration
-
-### Other Platforms
-- **Netlify**: Connect your GitHub repo
-- **Railway**: Deploy with `railway up`
-- **Self-hosted**: Build with `npm run build`
 
 ## 🤝 Contributing
 
