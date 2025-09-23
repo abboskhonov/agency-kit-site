@@ -1,5 +1,3 @@
-// Utility functions for loading and processing markdown content
-
 export interface BlogPostMetadata {
   title: string;
   subtitle: string;
@@ -31,7 +29,6 @@ export interface BlogPostContent {
   }>;
 }
 
-// Sample blog post metadata - in a real app, this would come from a CMS or API
 const blogPostMetadata: Record<string, BlogPostMetadata> = {
   "future-ai-business-comprehensive-guide": {
     title: "The Future of AI in Business: A Comprehensive Guide",
@@ -110,7 +107,7 @@ const blogPostMetadata: Record<string, BlogPostMetadata> = {
   },
 };
 
-// Function to parse markdown and extract headings for table of contents
+
 export const parseMarkdownHeadings = (markdown: string) => {
   const headingRegex = /^(#{1,6})\s+(.+)$/gm;
   const headings = [];
@@ -135,10 +132,8 @@ export const parseMarkdownHeadings = (markdown: string) => {
   return headings;
 };
 
-// Enhanced markdown to HTML converter with better styling
 export const markdownToHTML = (markdown: string) => {
   const html = markdown
-    // Headers with proper styling and IDs
     .replace(
       /^### (.*$)/gim,
       '<h3 id="$1" class="scroll-mt-24 text-xl font-semibold mb-4 mt-8 text-foreground">$1</h3>'
@@ -164,21 +159,16 @@ export const markdownToHTML = (markdown: string) => {
       /```([\s\S]*?)```/g,
       '<pre class="bg-muted p-4 rounded-lg overflow-x-auto mb-4"><code class="text-sm">$1</code></pre>'
     )
-    // Inline code
     .replace(/`([^`]+)`/g, '<code class="bg-muted px-2 py-1 rounded text-sm font-mono">$1</code>');
 
   return html;
 };
 
-// Function to load blog post content by slug
 export const loadBlogPost = async (slug: string): Promise<BlogPostContent> => {
   try {
-    // In a real application, you would fetch the markdown file from a server
-    // For now, we'll simulate loading different markdown content based on slug
     let markdownContent = "";
 
     if (slug === "future-ai-business-comprehensive-guide") {
-      // This would be loaded from the actual markdown file
       markdownContent = `# The Future of AI in Business: A Comprehensive Guide
 
 Artificial Intelligence is no longer a futuristic concept—it's a present reality that's transforming how businesses operate, compete, and grow. From small startups to enterprise giants, organizations are leveraging AI to streamline operations, enhance customer experiences, and drive innovation.

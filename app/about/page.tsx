@@ -1,10 +1,10 @@
 "use client";
 
 import "@/lib/GSAPAnimations";
+import { pageMetadata } from "@/lib/metadata";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import Head from "next/head";
 import { useRef } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -72,62 +72,13 @@ const AboutPage = () => {
 
   return (
     <>
-      <Head>
-        <title>About Ionio - AI Innovation & Technology Solutions</title>
-        <meta 
-          name="description" 
-          content="Learn about Ionio's story, culture, and expertise in AI innovation. We are driven by people and powered by AI technology to deliver impactful solutions." 
-        />
-        <meta 
-          name="keywords" 
-          content="Ionio, AI innovation, technology solutions, artificial intelligence, machine learning, company culture, team expertise" 
-        />
-        <meta property="og:title" content="About Ionio - AI Innovation & Technology Solutions" />
-        <meta 
-          property="og:description" 
-          content="Learn about Ionio's story, culture, and expertise in AI innovation. We are driven by people and powered by AI technology to deliver impactful solutions." 
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://ionio.com/about" />
-        <meta property="og:image" content="https://res.cloudinary.com/dieth2xb3/image/upload/v1755799085/ssimage_bxr8i6.png" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="About Ionio - AI Innovation & Technology Solutions" />
-        <meta 
-          name="twitter:description" 
-          content="Learn about Ionio's story, culture, and expertise in AI innovation. We are driven by people and powered by AI technology to deliver impactful solutions." 
-        />
-        <meta name="twitter:image" content="https://res.cloudinary.com/dieth2xb3/image/upload/v1755799085/ssimage_bxr8i6.png" />
-        <link rel="canonical" href="https://ionio.com/about" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "Ionio",
-              "description": "AI innovation company driven by people and powered by technology to deliver impactful AI solutions",
-              "url": "https://ionio.com",
-              "logo": "https://ionio.com/logo.png",
-              "foundingDate": "2016",
-              "numberOfEmployees": "50-100",
-              "address": {
-                "@type": "PostalAddress",
-                "addressCountry": "US"
-              },
-              "sameAs": [
-                "https://linkedin.com/company/ionio",
-                "https://twitter.com/ionio"
-              ],
-              "knowsAbout": [
-                "Artificial Intelligence",
-                "Machine Learning",
-                "AI Solutions",
-                "Technology Innovation"
-              ]
-            })
-          }}
-        />
-      </Head>
+      <script
+        type="application/ld+json"
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(pageMetadata.about.structuredData),
+        }}
+      />
       
       <main id="main-content" role="main">
         <section className="py-32 mx-auto max-w-6xl px-5" aria-labelledby="about-heading">
@@ -151,7 +102,7 @@ const AboutPage = () => {
                     innovative and practical.
                   </p>
                 </header>
-                <figure ref={(el) => (imageGroupRefs.current[0] = el)} className="flex flex-col items-center justify-center gap-6 md:flex-row" role="group" aria-label="Company team and workplace images">
+                <figure ref={(el) => { imageGroupRefs.current[0] = el as HTMLDivElement; }} className="flex flex-col items-center justify-center gap-6 md:flex-row" role="group" aria-label="Company team and workplace images">
                   <img
                     src="https://res.cloudinary.com/dieth2xb3/image/upload/v1755799085/ssimage_bxr8i6.png"
                     alt="Ionio team members collaborating on AI projects in modern office environment"
@@ -184,7 +135,7 @@ const AboutPage = () => {
                 </figure>
           </div>
               <div className="flex w-full flex-col items-center justify-center gap-12 pt-12 lg:w-1/2 lg:pt-48">
-                <figure ref={(el) => (imageGroupRefs.current[1] = el)} className="flex flex-col items-center justify-center gap-6 md:flex-row" role="group" aria-label="Additional workplace and team collaboration images">
+                <figure ref={(el) => { imageGroupRefs.current[1] = el as HTMLDivElement; }} className="flex flex-col items-center justify-center gap-6 md:flex-row" role="group" aria-label="Additional workplace and team collaboration images">
                   <img
                     src="https://res.cloudinary.com/dieth2xb3/image/upload/v1755799085/ssimage_bxr8i6.png"
                     alt="Ionio team members in collaborative workspace discussing AI innovation projects"

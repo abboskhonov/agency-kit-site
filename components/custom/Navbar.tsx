@@ -3,6 +3,7 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import { Github } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
@@ -190,7 +191,6 @@ function Navbar() {
             className="flex items-center justify-between py-4"
             role="navigation"
             aria-label="Primary navigation"
-            // ref={navRef}
           >
             {/* Logo */}
             <div className="flex items-center">
@@ -227,8 +227,8 @@ function Navbar() {
                   <li key={link.name} role="none">
                     <Link
                       href={link.href}
-                      className={`text-text-heading hover:text-foreground focus:ring-ring rounded-md px-2 py-1 !text-sm font-medium transition-colors focus:ring-2 focus:ring-offset-2 focus:outline-none ${
-                        isActive ? "text-foreground" : "text-foreground/70"
+                      className={`text-text-heading hover:text-foreground focus:ring-ring rounded-md px-2 py-1 !text-sm font-medium transition-colors focus:ring-0 focus:outline-none ${
+                        isActive ? "text-foreground font-normal" : "text-foreground/70"
                       }`}
                       role="menuitem"
                       aria-describedby={`nav-description-${index}`}
@@ -245,13 +245,26 @@ function Navbar() {
               })}
             </ul>
 
-            <Button
-              size={"sm"}
-              className="ml-4 hidden text-sm lg:block"
-              aria-label="Contact us to start working together"
-            >
-              Work with us
-            </Button>
+            <div className="flex items-center gap-3">
+              {/* GitHub Icon */}
+              <Link
+                href="https://github.com/pinak3748"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="focus:ring-ring flex items-center justify-center rounded-md p-2 transition-colors hover:bg-accent"
+                aria-label="Visit our GitHub repository"
+              >
+                <Github className="h-5 w-5 text-primary" />
+              </Link>
+
+              <Button
+                size={"sm"}
+                className="text-sm"
+                aria-label="Contact us to start working together"
+              >
+                Work with us
+              </Button>
+            </div>
 
             {/* Mobile Menu Button */}
             <div className="lg:hidden">
@@ -302,7 +315,7 @@ function Navbar() {
                         <li key={link.name} role="none">
                           <Link
                             href={link.href}
-                            className={`hover:bg-accent hover:text-accent-foreground focus:ring-none focus:ring-ring block rounded-md px-3 py-2 text-base font-medium transition-colors focus:ring-offset-2 focus:outline-none ${
+                            className={`hover:bg-accent hover:text-accent-foreground block rounded-md px-3 py-2 text-base font-medium transition-colors focus:outline-none ${
                               activeIndex === index || isActive
                                 ? "bg-accent text-accent-foreground"
                                 : "text-foreground/70"
@@ -322,7 +335,20 @@ function Navbar() {
                       );
                     })}
                   </ul>
-                  <div className="border-t pt-4">
+                  <div className="border-t pt-4 space-y-3">
+                    {/* GitHub Link */}
+                    <Link
+                      href="https://github.com/ionio"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center gap-2 rounded-md px-3 py-2 text-base font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:outline-none"
+                      aria-label="Visit our GitHub repository"
+                      onClick={closeMenu}
+                    >
+                      <Github className="h-5 w-5 text-primary" />
+                      GitHub
+                    </Link>
+                    
                     <Button
                       className="w-full"
                       aria-label="Contact us to start working together"

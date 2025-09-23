@@ -74,7 +74,7 @@ function HomePage() {
           size="lg"
           align="center"
           as="h1"
-          className="heading"
+          className="heading max-w-4/5 mx-auto"
           headingClassName="md:mx-auto md:w-2/3 leading-tight"
           showDescriptionToScreenReaders={true}
         />

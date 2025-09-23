@@ -1,6 +1,7 @@
 import { AnimatedHeroSection } from "@/components/custom/AnimatedHeroSection";
 import { AnimatedMainContent } from "@/components/custom/AnimatedMainContent";
 import { getBlogPosts, getPost } from "@/lib/blog";
+import { generateBlogPostMetadata, generateBlogPostStructuredData } from "@/lib/metadata";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
@@ -19,23 +20,8 @@ export async function generateMetadata({
   const post = await getPost(params.slug);
 
   const { title, publishedAt: publishedTime, summary: description, image } = post.metadata;
-  //   let ogImage = image ? `${DATA.url}${image}` : `${DATA.url}/og?title=${title}`;
 
-  return {
-    title,
-    description,
-    openGraph: {
-      title,
-      description,
-      type: "article",
-      publishedTime,
-    },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description,
-    },
-  };
+  return generateBlogPostMetadata(title, description, publishedTime, params.slug, image);
 }
 
 export default async function Blog({
@@ -51,23 +37,20 @@ export default async function Blog({
     notFound();
   }
 
+  const structuredData = generateBlogPostStructuredData(
+    post.metadata.title,
+    post.metadata.summary,
+    post.metadata.publishedAt,
+    params.slug
+  );
+
   return (
     <div className="min-h-screen w-full relative">
       <script
         type="application/ld+json"
         suppressHydrationWarning
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline: post.metadata.title,
-            datePublished: post.metadata.publishedAt,
-            dateModified: post.metadata.publishedAt,
-            description: post.metadata.summary,
-            author: {
-              "@type": "Person",
-            },
-          }),
+          __html: JSON.stringify(structuredData),
         }}
       />
 
