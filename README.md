@@ -7,7 +7,8 @@ A beautiful, fully responsive, and SEO-optimized website template built with **N
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-38B2AC?style=for-the-badge&logo=tailwind-css)
 ![GSAP](https://img.shields.io/badge/GSAP-3-88CE02?style=for-the-badge&logo=gsap)
 
-[![Watch the video]([https://raw.githubusercontent.com/username/repository/branch/path/to/thumbnail.jpg](https://res.cloudinary.com/dapwdht9e/video/upload/c_limit,h_400,w_600/v1758732623/Ionio_-_AI_Innovation_Technology_Solutions_2025-09-23_22_02_51_u1ztga.jpg))](https://player.cloudinary.com/embed/?cloud_name=dapwdht9e&public_id=Ionio_-_AI_Innovation_Technology_Solutions_2025-09-23_22_02_51_u1ztga&profile=cld-default)
+[![Watch the video](https://i9.ytimg.com/vi/lKbg6UZc2P4/mqdefault.jpg?sqp=CKSs1MYG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYACzAWKAgwIABABGDogUShyMA8=&rs=AOn4CLBRBnaKFTOTmQ-6DfAjTWoyN1WyZQ)]([https://youtu.be/vt5fpE0bzSY](https://youtu.be/lKbg6UZc2P4))
+
 
 ## ✨ Features
 
