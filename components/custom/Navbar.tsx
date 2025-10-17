@@ -34,7 +34,7 @@ function Navbar() {
       name: "Blog",
       href: "/blog",
       description: "Read our latest AI insights and research",
-    }
+    },
   ];
 
   const toggleMenu = () => {
@@ -58,7 +58,9 @@ function Navbar() {
         break;
       case "ArrowUp":
         event.preventDefault();
-        setActiveIndex((prev) => (prev - 1 + navLinks.length) % navLinks.length);
+        setActiveIndex(
+          (prev) => (prev - 1 + navLinks.length) % navLinks.length,
+        );
         break;
       case "Home":
         event.preventDefault();
@@ -129,7 +131,12 @@ function Navbar() {
           if (isHidden) {
             isHidden = false;
           }
-          gsap.to(headerEl, { y: 0, duration: 0.4, ease: "power2.out", overwrite: "auto" });
+          gsap.to(headerEl, {
+            y: 0,
+            duration: 0.4,
+            ease: "power2.out",
+            overwrite: "auto",
+          });
           return;
         }
 
@@ -138,7 +145,12 @@ function Navbar() {
           if (isHidden) {
             isHidden = false;
           }
-          gsap.to(headerEl, { y: 0, duration: 0.4, ease: "power2.out", overwrite: "auto" });
+          gsap.to(headerEl, {
+            y: 0,
+            duration: 0.4,
+            ease: "power2.out",
+            overwrite: "auto",
+          });
           return;
         }
 
@@ -157,7 +169,12 @@ function Navbar() {
           // Scrolling up → show
           if (isHidden) {
             isHidden = false;
-            gsap.to(headerEl, { y: 0, duration: 0.45, ease: "power2.out", overwrite: "auto" });
+            gsap.to(headerEl, {
+              y: 0,
+              duration: 0.45,
+              ease: "power2.out",
+              overwrite: "auto",
+            });
           }
         }
       },
@@ -221,14 +238,17 @@ function Navbar() {
             >
               {navLinks.map((link, index) => {
                 const isActive =
-                  pathname === link.href || (link.href.startsWith("/#") && pathname === "/");
+                  pathname === link.href ||
+                  (link.href.startsWith("/#") && pathname === "/");
 
                 return (
                   <li key={link.name} role="none">
                     <Link
                       href={link.href}
                       className={`text-text-heading hover:text-foreground focus:ring-ring rounded-md px-2 py-1 !text-sm font-medium transition-colors focus:ring-0 focus:outline-none ${
-                        isActive ? "text-foreground font-normal" : "text-foreground/70"
+                        isActive
+                          ? "text-foreground font-normal"
+                          : "text-foreground/70"
                       }`}
                       role="menuitem"
                       aria-describedby={`nav-description-${index}`}
@@ -274,22 +294,30 @@ function Navbar() {
                 className="relative inline-flex h-10 w-10 items-center justify-center rounded-md outline-none focus:ring-0 focus:outline-none"
                 aria-expanded={isMenuOpen}
                 aria-controls="mobile-menu"
-                aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+                aria-label={
+                  isMenuOpen ? "Close navigation menu" : "Open navigation menu"
+                }
                 aria-haspopup="true"
               >
                 <span
                   aria-hidden="true"
                   className={`bg-foreground absolute left-1/2 block h-0.5 w-6 -translate-x-1/2 rounded-sm transition-all duration-200 ease-in-out ${
-                    isMenuOpen ? "top-1/2 -translate-y-1/2 rotate-45" : "top-3 rotate-0"
+                    isMenuOpen
+                      ? "top-1/2 -translate-y-1/2 rotate-45"
+                      : "top-3 rotate-0"
                   }`}
                 />
                 <span
                   aria-hidden="true"
                   className={`bg-foreground absolute left-1/2 block h-0.5 w-6 -translate-x-1/2 rounded-sm transition-all duration-200 ease-in-out ${
-                    isMenuOpen ? "top-1/2 -translate-y-1/2 -rotate-45" : "top-5 rotate-0"
+                    isMenuOpen
+                      ? "top-1/2 -translate-y-1/2 -rotate-45"
+                      : "top-5 rotate-0"
                   }`}
                 />
-                <span className="sr-only">{isMenuOpen ? "Close menu" : "Open menu"}</span>
+                <span className="sr-only">
+                  {isMenuOpen ? "Close menu" : "Open menu"}
+                </span>
               </button>
             </div>
           </nav>
@@ -306,10 +334,15 @@ function Navbar() {
             >
               <div className="">
                 <div className="space-y-2 px-2 py-4">
-                  <ul className="space-y-2" role="menu" aria-label="Mobile navigation options">
+                  <ul
+                    className="space-y-2"
+                    role="menu"
+                    aria-label="Mobile navigation options"
+                  >
                     {navLinks.map((link, index) => {
                       const isActive =
-                        pathname === link.href || (link.href.startsWith("/#") && pathname === "/");
+                        pathname === link.href ||
+                        (link.href.startsWith("/#") && pathname === "/");
 
                       return (
                         <li key={link.name} role="none">
@@ -327,7 +360,10 @@ function Navbar() {
                             onKeyDown={(e) => handleKeyDown(e)}
                           >
                             {link.name}
-                            <span id={`mobile-nav-description-${index}`} className="sr-only">
+                            <span
+                              id={`mobile-nav-description-${index}`}
+                              className="sr-only"
+                            >
                               {link.description}
                             </span>
                           </Link>
@@ -348,7 +384,7 @@ function Navbar() {
                       <Github className="h-5 w-5 text-primary" />
                       GitHub
                     </Link>
-                    
+
                     <Button
                       className="w-full"
                       aria-label="Contact us to start working together"

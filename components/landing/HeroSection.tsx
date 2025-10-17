@@ -16,7 +16,7 @@ import { useGSAP } from "@gsap/react";
 import Autoplay from "embla-carousel-autoplay";
 import gsap from "gsap";
 import { ScrollTrigger, SplitText } from "gsap/all";
-import { Sparkles } from "lucide-react";
+import { Zap } from "lucide-react";
 import { useRef } from "react";
 
 // Register ScrollTrigger plugin
@@ -67,10 +67,10 @@ function HomePage() {
         className="hero space-y-4 pt-[116px] pb-[48px] md:pt-[128px] md:pb-[128px] md:text-center lg:pt-[140px] lg:pb-[96px]"
       >
         <SectionHeading
-          badge="AI Strategy & Development"
-          heading="AI Transformation Partner for Growing Businesses"
-          description="We build, train, & deploy custom-LLMs (GPT4, Mistral, Llama3) and other generative AI technologies into products & services at scale — thousands of users & millions of interactions."
-          icon={Sparkles}
+          badge="Web & AI Solutions"
+          heading="Build Your Digital Presence with CogniLabs"
+          description="We create stunning websites, powerful landing pages, intelligent CRM systems, AI chatbots, and Telegram bots that transform how your business connects with customers — delivering seamless digital experiences at scale."
+          icon={Zap}
           size="lg"
           align="center"
           as="h1"
@@ -88,7 +88,7 @@ function HomePage() {
             type="button"
             className="cursor-pointer"
           >
-            Talk to our founder
+            Start Your Project
           </Button>
           <Button
             aria-describedby="case-studies-cta-description"
@@ -96,12 +96,16 @@ function HomePage() {
             className="cursor-pointer"
             variant={"outline"}
           >
-            View Case Studios
+            See Our Work
           </Button>
         </div>
 
-        <div className="relative" role="region" aria-label="Our trusted clients">
-          <h2 className="!sr-only">Companies We've Helped Transform</h2>
+        <div
+          className="relative"
+          role="region"
+          aria-label="Our trusted clients"
+        >
+          <h2 className="!sr-only">Companies We've Worked With</h2>
           <div className="pointer-events-none absolute top-0 left-0 z-10 h-full w-12 bg-gradient-to-r from-gray-50 via-gray-50/90 to-transparent md:w-48"></div>
 
           {/* Right fade gradient */}
@@ -158,7 +162,10 @@ function HomePage() {
                 aria-roledescription="slide"
                 aria-label={`${index + 1} of ${caseStudies.length}: ${caseStudy.name}`}
               >
-                <div key={`case-study-${index}`} className="w-full max-w-sm space-y-3 text-left">
+                <div
+                  key={`case-study-${index}`}
+                  className="w-full max-w-sm space-y-3 text-left"
+                >
                   <div className="bg-tag-bg flex aspect-square items-center justify-center rounded-md p-4">
                     <img
                       src={caseStudy["main_image_src"]}
@@ -173,8 +180,10 @@ function HomePage() {
                       {caseStudy["project_title"]}
                     </p>
                     <div className="flex items-center gap-3">
-                      <p className="text-heading text-sm font-medium">Standard Draft</p>
-                      <p className="text-heading text-sm">[AI DOCUMENT]</p>
+                      <p className="text-heading text-sm font-medium">
+                        CogniLabs
+                      </p>
+                      <p className="text-heading text-sm">[CUSTOM SOLUTION]</p>
                     </div>
                   </div>
                 </div>
