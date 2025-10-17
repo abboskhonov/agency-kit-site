@@ -1,29 +1,32 @@
 import type { Metadata } from "next";
 
 export const siteConfig = {
-  name: "Ionio",
-  description: "AI innovation company driven by people and powered by technology to deliver impactful AI solutions",
-  url: "https://ionio.com",
-  ogImage: "https://res.cloudinary.com/dieth2xb3/image/upload/v1755799085/ssimage_bxr8i6.png",
-  logo: "https://ionio.com/logo.png",
+  name: "CogniLabs",
+  description: "Digital solutions company creating websites, landing pages, CRMs, AI chatbots, and Telegram bots for growing businesses",
+  url: "https://cognilabs.com",
+  ogImage: "https://res.cloudinary.com/dieth2xb3/image/upload/v1755799085/cognilabs_og_image.png",
+  logo: "https://cognilabs.com/logo.png",
   keywords: [
-    "AI innovation",
-    "artificial intelligence",
-    "machine learning",
-    "technology solutions",
-    "AI consulting",
-    "machine learning engineering",
-    "LLM development",
-    "AI strategy"
+    "web development",
+    "landing pages",
+    "CRM development",
+    "AI chatbots",
+    "Telegram bots",
+    "digital solutions",
+    "web design",
+    "custom software",
+    "business automation",
+    "conversational AI",
+    "business applications"
   ],
   authors: [
     {
-      name: "Ionio Team",
-      url: "https://ionio.com",
+      name: "CogniLabs Team",
+      url: "https://cognilabs.com",
     },
   ],
-  creator: "Ionio",
-  publisher: "Ionio",
+  creator: "CogniLabs",
+  publisher: "CogniLabs",
   robots: {
     index: true,
     follow: true,
@@ -38,31 +41,31 @@ export const siteConfig = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://ionio.com",
-    siteName: "Ionio",
-    title: "Ionio - AI Innovation & Technology Solutions",
-    description: "AI innovation company driven by people and powered by technology to deliver impactful AI solutions",
+    url: "https://cognilabs.com",
+    siteName: "CogniLabs",
+    title: "CogniLabs - Digital & AI Solutions for Business",
+    description: "Professional web development, CRM systems, AI chatbots, and Telegram bots designed to grow your business",
     images: [
       {
-        url: "https://res.cloudinary.com/dieth2xb3/image/upload/v1755799085/ssimage_bxr8i6.png",
+        url: "https://res.cloudinary.com/dieth2xb3/image/upload/v1755799085/cognilabs_og_image.png",
         width: 1200,
         height: 630,
-        alt: "Ionio - AI Innovation & Technology Solutions",
+        alt: "CogniLabs - Digital & AI Solutions for Business",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ionio - AI Innovation & Technology Solutions",
-    description: "AI innovation company driven by people and powered by technology to deliver impactful AI solutions",
-    images: ["https://res.cloudinary.com/dieth2xb3/image/upload/v1755799085/ssimage_bxr8i6.png"],
-    creator: "@ionio",
+    title: "CogniLabs - Digital & AI Solutions for Business",
+    description: "Professional web development, CRM systems, AI chatbots, and Telegram bots designed to grow your business",
+    images: ["https://res.cloudinary.com/dieth2xb3/image/upload/v1755799085/cognilabs_og_image.png"],
+    creator: "@cognilabs",
   },
   verification: {
-    google: "your-google-verification-code", 
+    google: "your-google-verification-code",
   },
   alternates: {
-    canonical: "https://ionio.com",
+    canonical: "https://cognilabs.com",
   },
   category: "technology",
 };
@@ -70,107 +73,163 @@ export const siteConfig = {
 
 export const pageMetadata = {
   home: {
-    title: "Ionio - AI Innovation & Technology Solutions",
-    description: "Transform your business with cutting-edge AI solutions. Ionio delivers innovative artificial intelligence technologies that drive growth and efficiency.",
+    title: "CogniLabs - Web & AI Solutions for Growing Businesses",
+    description: "Transform your business with custom websites, landing pages, CRM systems, intelligent AI chatbots, and Telegram bots. We deliver digital solutions that drive growth and customer engagement.",
     keywords: [
-      "AI solutions",
-      "artificial intelligence consulting",
-      "machine learning services",
-      "AI innovation",
-      "technology transformation",
-      "business AI",
-      "AI strategy"
+      "web development",
+      "digital solutions",
+      "CRM development",
+      "AI chatbots",
+      "Telegram bots",
+      "landing page design",
+      "custom web applications",
+      "business automation"
     ],
     openGraph: {
-      title: "Ionio - AI Innovation & Technology Solutions",
-      description: "Transform your business with cutting-edge AI solutions. Ionio delivers innovative artificial intelligence technologies that drive growth and efficiency.",
-      url: "https://ionio.com",
+      title: "CogniLabs - Web & AI Solutions for Growing Businesses",
+      description: "Transform your business with custom websites, landing pages, CRM systems, intelligent AI chatbots, and Telegram bots.",
+      url: "https://cognilabs.com",
       type: "website",
     },
     twitter: {
-      title: "Ionio - AI Innovation & Technology Solutions",
-      description: "Transform your business with cutting-edge AI solutions. Ionio delivers innovative artificial intelligence technologies that drive growth and efficiency.",
+      title: "CogniLabs - Web & AI Solutions for Growing Businesses",
+      description: "Transform your business with custom websites, landing pages, CRM systems, intelligent AI chatbots, and Telegram bots.",
     },
     alternates: {
-      canonical: "https://ionio.com",
+      canonical: "https://cognilabs.com",
     },
   },
   about: {
-    title: "About Ionio - AI Innovation & Technology Solutions",
-    description: "Learn about Ionio's story, culture, and expertise in AI innovation. We are driven by people and powered by AI technology to deliver impactful solutions.",
+    title: "About CogniLabs - Digital & AI Solutions Company",
+    description: "Learn about CogniLabs' mission to deliver innovative digital and AI solutions. We build websites, CRMs, AI chatbots, and Telegram bots that help businesses scale.",
     keywords: [
-      "Ionio",
-      "AI innovation",
-      "technology solutions",
-      "artificial intelligence",
-      "machine learning",
-      "company culture",
+      "CogniLabs",
+      "web development",
+      "AI solutions",
+      "digital agency",
+      "custom software",
       "team expertise",
-      "AI company story"
+      "business technology",
+      "company mission"
     ],
     openGraph: {
-      title: "About Ionio - AI Innovation & Technology Solutions",
-      description: "Learn about Ionio's story, culture, and expertise in AI innovation. We are driven by people and powered by AI technology to deliver impactful solutions.",
-      url: "https://ionio.com/about",
+      title: "About CogniLabs - Digital & AI Solutions Company",
+      description: "Learn about CogniLabs' mission to deliver innovative digital and AI solutions. We build websites, CRMs, AI chatbots, and Telegram bots that help businesses scale.",
+      url: "https://cognilabs.com/about",
       type: "website",
     },
     twitter: {
-      title: "About Ionio - AI Innovation & Technology Solutions",
-      description: "Learn about Ionio's story, culture, and expertise in AI innovation. We are driven by people and powered by AI technology to deliver impactful solutions.",
+      title: "About CogniLabs - Digital & AI Solutions Company",
+      description: "Learn about CogniLabs' mission to deliver innovative digital and AI solutions. We build websites, CRMs, AI chatbots, and Telegram bots that help businesses scale.",
     },
     alternates: {
-      canonical: "https://ionio.com/about",
+      canonical: "https://cognilabs.com/about",
     },
     structuredData: {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "Ionio",
-      "description": "AI innovation company driven by people and powered by technology to deliver impactful AI solutions",
-      "url": "https://ionio.com",
-      "logo": "https://ionio.com/logo.png",
-      "foundingDate": "2016",
-      "numberOfEmployees": "50-100",
+      "name": "CogniLabs",
+      "description": "Digital solutions company creating websites, landing pages, CRMs, AI chatbots, and Telegram bots for growing businesses",
+      "url": "https://cognilabs.com",
+      "logo": "https://cognilabs.com/logo.png",
+      "numberOfEmployees": "20-50",
       "address": {
         "@type": "PostalAddress",
         "addressCountry": "US"
       },
       "sameAs": [
-        "https://linkedin.com/company/ionio",
-        "https://twitter.com/ionio"
+        "https://linkedin.com/company/cognilabs",
+        "https://twitter.com/cognilabs"
       ],
       "knowsAbout": [
-        "Artificial Intelligence",
-        "Machine Learning",
-        "AI Solutions",
-        "Technology Innovation"
+        "Web Development",
+        "AI Chatbots",
+        "CRM Systems",
+        "Telegram Bots",
+        "Digital Solutions",
+        "Business Automation"
       ]
     }
   },
-  blog: {
-    title: "AI Insights & Research - Ionio Blog",
-    description: "Stay updated with the latest trends, research, and insights in artificial intelligence, machine learning, and emerging technologies that are shaping the future of business.",
+  services: {
+    title: "Our Services - CogniLabs Digital & AI Solutions",
+    description: "Explore our comprehensive services: custom websites, high-converting landing pages, powerful CRM systems, intelligent AI chatbots, and Telegram bots tailored for your business.",
     keywords: [
-      "AI blog",
-      "artificial intelligence insights",
-      "machine learning research",
-      "AI trends",
-      "technology insights",
-      "AI articles",
-      "ML engineering",
-      "LLM development"
+      "web design services",
+      "landing page design",
+      "CRM development",
+      "AI chatbot development",
+      "Telegram bot development",
+      "custom software",
+      "digital transformation",
+      "business solutions"
     ],
     openGraph: {
-      title: "AI Insights & Research - Ionio Blog",
-      description: "Stay updated with the latest trends, research, and insights in artificial intelligence, machine learning, and emerging technologies that are shaping the future of business.",
-      url: "https://ionio.com/blog",
+      title: "Our Services - CogniLabs Digital & AI Solutions",
+      description: "Explore our comprehensive services: custom websites, high-converting landing pages, powerful CRM systems, intelligent AI chatbots, and Telegram bots.",
+      url: "https://cognilabs.com/services",
       type: "website",
     },
     twitter: {
-      title: "AI Insights & Research - Ionio Blog",
-      description: "Stay updated with the latest trends, research, and insights in artificial intelligence, machine learning, and emerging technologies that are shaping the future of business.",
+      title: "Our Services - CogniLabs Digital & AI Solutions",
+      description: "Explore our comprehensive services: custom websites, landing pages, CRM systems, AI chatbots, and Telegram bots.",
     },
     alternates: {
-      canonical: "https://ionio.com/blog",
+      canonical: "https://cognilabs.com/services",
+    },
+  },
+  portfolio: {
+    title: "Portfolio & Case Studies - CogniLabs Projects",
+    description: "Discover how CogniLabs has helped businesses scale with custom websites, CRM systems, AI chatbots, and Telegram bots. View our successful project case studies.",
+    keywords: [
+      "portfolio",
+      "case studies",
+      "project showcase",
+      "web projects",
+      "CRM solutions",
+      "chatbot implementations",
+      "business results",
+      "client success"
+    ],
+    openGraph: {
+      title: "Portfolio & Case Studies - CogniLabs Projects",
+      description: "Discover how CogniLabs has helped businesses scale with custom solutions. View our successful project case studies.",
+      url: "https://cognilabs.com/portfolio",
+      type: "website",
+    },
+    twitter: {
+      title: "Portfolio & Case Studies - CogniLabs Projects",
+      description: "Discover how CogniLabs has helped businesses scale with custom solutions.",
+    },
+    alternates: {
+      canonical: "https://cognilabs.com/portfolio",
+    },
+  },
+  blog: {
+    title: "Blog - Digital & AI Insights from CogniLabs",
+    description: "Stay updated with the latest trends, tips, and insights in web development, AI chatbots, CRM systems, and digital solutions for business growth.",
+    keywords: [
+      "blog",
+      "digital insights",
+      "web development tips",
+      "AI chatbot insights",
+      "CRM guides",
+      "business automation",
+      "technology trends",
+      "digital transformation"
+    ],
+    openGraph: {
+      title: "Blog - Digital & AI Insights from CogniLabs",
+      description: "Stay updated with the latest trends, tips, and insights in web development, AI chatbots, CRM systems, and digital solutions.",
+      url: "https://cognilabs.com/blog",
+      type: "website",
+    },
+    twitter: {
+      title: "Blog - Digital & AI Insights from CogniLabs",
+      description: "Stay updated with the latest trends, tips, and insights in web development, AI chatbots, and digital solutions.",
+    },
+    alternates: {
+      canonical: "https://cognilabs.com/blog",
     },
   },
 };
@@ -208,21 +267,21 @@ export function generateBlogPostMetadata(
   slug: string,
   image?: string
 ): Metadata {
-  const blogUrl = `https://ionio.com/blog/${slug}`;
+  const blogUrl = `https://cognilabs.com/blog/${slug}`;
   const ogImage = image || siteConfig.ogImage;
 
   return {
-    title: `${title} - Ionio Blog`,
+    title: `${title} - CogniLabs Blog`,
     description,
     keywords: [
       ...siteConfig.keywords,
-      "AI blog post",
-      "artificial intelligence article",
-      "machine learning insights"
+      "blog post",
+      "web development article",
+      "digital solutions insights"
     ],
     openGraph: {
       ...siteConfig.openGraph,
-      title: `${title} - Ionio Blog`,
+      title: `${title} - CogniLabs Blog`,
       description,
       url: blogUrl,
       type: "article",
@@ -238,7 +297,7 @@ export function generateBlogPostMetadata(
     },
     twitter: {
       ...siteConfig.twitter,
-      title: `${title} - Ionio Blog`,
+      title: `${title} - CogniLabs Blog`,
       description,
       images: [ogImage],
     },
@@ -264,14 +323,14 @@ export function generateBlogPostStructuredData(
     datePublished: publishedTime,
     dateModified: publishedTime,
     description,
-    url: `https://ionio.com/blog/${slug}`,
+    url: `https://cognilabs.com/blog/${slug}`,
     author: {
       "@type": "Person",
-      name: author || "Ionio Team",
+      name: author || "CogniLabs Team",
     },
     publisher: {
       "@type": "Organization",
-      name: "Ionio",
+      name: "CogniLabs",
       logo: {
         "@type": "ImageObject",
         url: siteConfig.logo,
@@ -279,7 +338,7 @@ export function generateBlogPostStructuredData(
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://ionio.com/blog/${slug}`,
+      "@id": `https://cognilabs.com/blog/${slug}`,
     },
   };
 }

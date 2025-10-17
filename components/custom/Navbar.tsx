@@ -267,15 +267,7 @@ function Navbar() {
 
             <div className="flex items-center gap-3">
               {/* GitHub Icon */}
-              <Link
-                href="https://github.com/pinak3748"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="focus:ring-ring flex items-center justify-center rounded-md p-2 transition-colors hover:bg-accent"
-                aria-label="Visit our GitHub repository"
-              >
-                <Github className="h-5 w-5 text-primary" />
-              </Link>
+             
 
               <Button
                 size={"sm"}
